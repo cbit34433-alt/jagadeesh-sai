@@ -1,0 +1,7 @@
+{
+  "name": "J.A.R.V.I.S. Universal AI",
+  "description": "A high-fidelity, real-time voice assistant inspired by Tony Stark's J.A.R.V.I.S., powered by the Gemini Live API for universal knowledge and low-latency conversation.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
