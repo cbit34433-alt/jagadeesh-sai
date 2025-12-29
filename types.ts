@@ -1,11 +1,17 @@
 
 export type LogSender = 'USER' | 'JARVIS' | 'SYSTEM';
 
+export interface GroundingSource {
+  title: string;
+  uri: string;
+}
+
 export interface ConsoleLog {
   id: string;
   sender: LogSender;
   message: string;
   timestamp: Date;
+  sources?: GroundingSource[];
 }
 
 export enum SystemStatus {
