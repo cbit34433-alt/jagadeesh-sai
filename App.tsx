@@ -89,7 +89,7 @@ const App: React.FC = () => {
       setStatus(SystemStatus.INITIALIZING);
       addLog('Bypassing standard security protocols...', 'SYSTEM');
 
-      const apiKey = process.env.API_KEY;
+      const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
       if (!apiKey) throw new Error("Security handshake failed. API Key missing.");
 
       const ai = new GoogleGenAI({ apiKey });
